@@ -1,0 +1,44 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Yutao Chen'
+
+[menus]
+[[menus.main]]
+name = "home"
+url = "#"
+weight = 1
+[[menus.main]]
+name = "about"
+url = "#about"
+weight = 2
+[[menus.main]]
+name = "news"
+url = "#news"
+weight = 3
+[[menus.main]]
+name = "publications"
+url = "#publications"
+weight = 4
+[[menus.main]]
+name = "résumé"
+url = "https://drive.google.com/file/d/1AXdsnkjaK5EA67Azi-4TWHFN2AoosW2w/view?usp=sharing"
+weight = 5
+
+[params]
+author = 'Yutao Chen'
+favicon = 'favicon.ico'
+
+[params.personal]
+avatar = 'avatar.jpg'
+name = 'Yutao Chen'
+title = 'PhD Student'
+affiliation = """
+Department of Computer and Information Science<br>
+Faculty of Science and Technology<br>
+University of Macau"""
+
+[params.personal.social]
+"Email" = { icon = "at", link = "mailto:yutaochen@um.edu.mo" }
+"Google Scholar" = { icon = "google-scholar", link = "https://scholar.google.com/citations?user=bNs7ulQAAAAJ" }
+"GitHub" = { icon = "github", link = "https://github.com/chnyutao" }
+"Twitter" = { icon = "twitter", link = "https://x.com/chnyutao" }

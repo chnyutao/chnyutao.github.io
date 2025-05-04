@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #da854d;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: #b84a00;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+body {
+    font-family: "Avenir Next", "Avenir", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 0;
+}
+
+header>.avatar {
+    align-items: center;
+    display: flex;
+    flex: 0 0 40%;
+    justify-content: center;
+}
+
+header>.avatar>img {
+    border-radius: 50%;
+    width: 60%;
+}
+
+header>.info {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+
+header>.info>.name {
+    font-size: x-large;
+    font-variant: small-caps;
+    margin-bottom: 1.5rem;
+}
+
+header>.info>.title {
+    color: #555;
+    font-size: large;
+    margin-bottom: 1rem;
+}
+
+header>.info>.affiliation {
+    color: #555;
+    font-size: large;
+    margin-bottom: 1rem;
+}
+
+header>.info>.social {
+    display: flex;
+    gap: 1rem;
+}
+
+header>.info>.social>.delimeter:last-child {
+    display: none;
+}
+
+main {
+    align-items: start;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+main>nav {
+    display: flex;
+    flex: 0 0 25%;
+    flex-direction: column;
+    font-size: large;
+    margin-top: 2rem;
+    position: sticky;
+    top: 2rem;
+}
+
+main>nav>a {
+    border-right: 1px solid #ddd;
+    color: gray;
+    padding: 0.7rem 1.4rem;
+    text-align: right;
+}
+
+main>nav>a:hover {
+    border-right: 3px solid #da854d;
+}
+
+main>nav>a>i.fa {
+    font-size: .7rem;
+}
+
+main>.content {
+    flex: 1 1 auto;
+    margin: 2rem;
+}
+
+main>.content>p {
+    padding-bottom: .5rem;
+    text-align: justify;
+}
+
+main>.content>h2 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+main>.content>h2:first-child {
+    margin-top: -2rem;
+}
+
+footer {
+    background-color: #6a2b01;
+    bottom: 0;
+    color: white;
+    display: flex;
+    font-size: .75rem;
+    justify-content: center;
+    left: 0;
+    padding: .25rem 0;
+    position: fixed;
+    width: 100%;
+}

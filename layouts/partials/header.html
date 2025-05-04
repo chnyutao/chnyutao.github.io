@@ -1,0 +1,20 @@
+<header>
+  <div class="avatar">
+    <img src="{{ .Site.Params.personal.avatar | absURL }}" alt="avatar">
+  </div>
+  <div class="info">
+    <h1 class="name">
+      {{ .Site.Params.personal.name | title }}
+    </h1>
+    <h2 class="title">{{ .Site.Params.personal.title }}</h2>
+    <p class="affiliation">{{ .Site.Params.personal.affiliation | safeHTML }}</p>
+    <div class="social">
+      {{ range $key, $val := .Site.Params.personal.social }}
+      <a href="{{ $val.link }}" target="_blank" rel="noopener">
+        <i class="fa-brands fa-{{ $val.icon }}"></i>&nbsp;{{ $key | title }}
+      </a>
+      <span class="delimeter">/</span>
+      {{ end }}
+    </div>
+  </div>
+</header>

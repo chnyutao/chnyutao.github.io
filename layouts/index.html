@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<main>
+  <nav>
+    {{ range .Site.Menus.main }}
+    {{ $URL := .URL | absURL }}
+    <a href="{{ $URL }}">
+      {{ .Name | title }}
+      {{ if not (or (strings.Contains $URL "localhost") (strings.Contains $URL $.Site.BaseURL)) }}
+      <i class="fa fa-arrow-up-right-from-square"></i>
+      {{ end }}
+    </a>
+    {{ end }}
+  </nav>
+  <div class="content">
+    {{ .Content}}
+  </div>
+</main>
+
+
+{{ end }}
