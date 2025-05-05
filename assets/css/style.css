@@ -1,3 +1,27 @@
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: #ffffff;
+        --border-color: #dddddd;
+        --footer-color: #6a2b01;
+        --link-color: #da854d;
+        --link-hover-color: #b84a00;
+        --text-color: #000000;
+        --text-dim-color: #555555;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #1a1a1a;
+        --border-color: #555555;
+        --footer-color: #6a2b01;
+        --link-color: #da854d;
+        --link-hover-color: #b84a00;
+        --text-color: #e0e0e0;
+        --text-dim-color: #aaaaaa;
+    }
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,12 +30,12 @@
 
 a {
     text-decoration: none;
-    color: #da854d;
+    color: var(--link-color);
     transition: all 0.2s ease;
 }
 
 a:hover {
-    color: #b84a00;
+    color: var(--link-hover-color);
 }
 
 h1,
@@ -24,6 +48,8 @@ h6 {
 }
 
 body {
+    background-color: var(--background-color);
+    color: var(--text-color);
     font-family: "Avenir Next", "Avenir", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
     margin: 0 auto;
     max-width: 1000px;
@@ -45,6 +71,8 @@ header>.avatar {
 
 header>.avatar>img {
     border-radius: 50%;
+    border: 1px solid var(--border-color);
+    padding: 5px;
     width: 60%;
 }
 
@@ -61,13 +89,13 @@ header>.info>.name {
 }
 
 header>.info>.title {
-    color: #555;
+    color: var(--text-dim-color);
     font-size: large;
     margin-bottom: 1rem;
 }
 
 header>.info>.affiliation {
-    color: #555;
+    color: var(--text-dim-color);
     font-size: large;
     margin-bottom: 1rem;
 }
@@ -75,6 +103,10 @@ header>.info>.affiliation {
 header>.info>.social {
     display: flex;
     gap: 1rem;
+}
+
+header>.info>.social>a>i {
+    color: var(--text-dim-color);
 }
 
 header>.info>.social>.delimeter:last-child {
@@ -99,17 +131,18 @@ main>nav {
 }
 
 main>nav>a {
-    border-right: 1px solid #ddd;
-    color: gray;
+    border-right: 1px solid var(--border-color);
+    color: var(--text-dim-color);
     padding: 0.7rem 1.4rem;
     text-align: right;
 }
 
 main>nav>a:hover {
-    border-right: 3px solid #da854d;
+    border-right: 3px solid var(--link-color);
+    font-weight: 500;
 }
 
-main>nav>a>i.fa {
+main>nav>a>i {
     font-size: .7rem;
 }
 
@@ -133,7 +166,7 @@ main>.content>h2:first-child {
 }
 
 footer {
-    background-color: #6a2b01;
+    background-color: var(--footer-color);
     bottom: 0;
     color: white;
     display: flex;
