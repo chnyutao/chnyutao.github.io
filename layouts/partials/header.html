@@ -11,7 +11,7 @@
     <div class="social">
       {{ range $key, $val := .Site.Params.personal.social }}
       <a href="{{ $val.link }}" target="_blank" rel="noopener">
-        <i class="fa-brands fa-{{ $val.icon }}"></i>&nbsp;{{ $key | title }}
+        <i class="fa fa-brands fa-{{ $val.icon }}"></i>&nbsp;{{ $key | title }}
       </a>
       <span class="delimeter">/</span>
       {{ end }}

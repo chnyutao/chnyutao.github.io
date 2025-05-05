@@ -7,7 +7,7 @@
     <a href="{{ $URL }}">
       {{ .Name | title }}
       {{ if not (or (strings.Contains $URL "localhost") (strings.Contains $URL $.Site.BaseURL)) }}
-      <i class="fa fa-arrow-up-right-from-square"></i>
+      <i class="fa fa-up-right-from-square"></i>
       {{ end }}
     </a>
     {{ end }}

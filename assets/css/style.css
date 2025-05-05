@@ -47,6 +47,13 @@ h6 {
     font-weight: 600;
 }
 
+
+i.fa {
+    align-self: flex-start;
+    color: var(--text-dim-color);
+    width: 1.2rem;
+}
+
 body {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -105,10 +112,6 @@ header>.info>.social {
     gap: 1rem;
 }
 
-header>.info>.social>a>i {
-    color: var(--text-dim-color);
-}
-
 header>.info>.social>.delimeter:last-child {
     display: none;
 }
@@ -142,8 +145,8 @@ main>nav>a:hover {
     font-weight: 500;
 }
 
-main>nav>a>i {
-    font-size: .7rem;
+main>nav>a>i.fa {
+    font-size: 0.9rem;
 }
 
 main>.content {
