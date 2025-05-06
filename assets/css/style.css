@@ -43,7 +43,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+strong {
     font-weight: 600;
 }
 
@@ -198,7 +199,6 @@ main>article>.news {
 
 main>article>.news td:first-child {
     font-size: small;
-    font-weight: bold;
     padding-top: 0.2rem;
     padding-right: 0.5rem;
     vertical-align: top;

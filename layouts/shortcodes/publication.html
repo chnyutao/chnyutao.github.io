@@ -1,5 +1,5 @@
 <div class="publication">
-  <h4>{{ .Get "title" }}</h4>
+  <strong>{{ .Get "title" }}</strong>
   {{ .Get "authors" | safeHTML }}<br>
   <em>{{ .Get "venue" }}</em><br>
   {{ .Inner }}
