@@ -110,6 +110,7 @@ header>.info>.affiliation {
 
 header>.info>.social {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -199,6 +200,7 @@ main>article>.news {
 
 main>article>.news td:first-child {
     font-size: small;
+    min-width: max-content;
     padding-top: 0.2rem;
     padding-right: 0.5rem;
     vertical-align: top;
@@ -240,11 +242,46 @@ footer {
     background-color: var(--footer-color);
     bottom: 0;
     color: white;
-    display: flex;
     font-size: 0.75rem;
-    justify-content: center;
     left: 0;
     padding: 0.25rem 0;
     position: fixed;
+    text-align: center;
     width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header>.avatar {
+        margin-bottom: 1rem;
+        width: 40%;
+    }
+
+    header>.info {
+        text-align: center;
+    }
+
+    header>.info>.title,
+    header>.info>.affiliation {
+        font-size: medium;
+    }
+
+    header>.info>.social {
+        justify-content: center;
+    }
+
+    header>.info>.social>.delimeter {
+        display: none;
+    }
+
+    main>nav {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
 }
