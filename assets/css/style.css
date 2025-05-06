@@ -149,23 +149,91 @@ main>nav>a>i.fa {
     font-size: 0.9rem;
 }
 
-main>.content {
+main>article {
     flex: 1 1 auto;
     margin: 2rem;
 }
 
-main>.content>p {
-    padding-bottom: .5rem;
+main>article>h2 {
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+main>article>h2:first-child {
+    margin-top: -2rem;
+}
+
+main>article>h2::after {
+    color: var(--text-dim-color);
+    content: " # ";
+    font-size: large;
+}
+
+main>article>*:has(+h2) {
+    margin-bottom: 0 !important;
+}
+
+main>article>ol,
+main>article>ul {
+    hyphens: auto;
+    margin-bottom: 0.5rem;
     text-align: justify;
 }
 
-main>.content>h2 {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+main>article ol,
+main>article ul {
+    padding-left: revert;
 }
 
-main>.content>h2:first-child {
-    margin-top: -2rem;
+main>article>p {
+    hyphens: auto;
+    margin-bottom: 0.5rem;
+    text-align: justify;
+}
+
+main>article>.news {
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+main>article>.news td:first-child {
+    font-size: small;
+    font-weight: bold;
+    padding-top: 0.2rem;
+    padding-right: 0.5rem;
+    vertical-align: top;
+    width: 15%;
+}
+
+main>article>.news td:not(:first-child) {
+    width: 85%;
+}
+
+main>article>.publication {
+    border-left: 2px dashed;
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
+
+main>article>.publication:nth-child(even) {
+    border-color: var(--text-dim-color);
+}
+
+main>article>.publication:nth-child(odd) {
+    border-color: var(--link-hover-color);
+}
+
+main>article>.publication>.tag {
+    border: 1px solid var(--link-color);
+    border-radius: 0.2rem;
+    display: inline-block;
+    font-size: x-small;
+    font-weight: 500;
+    padding: 0.1rem 0.5rem;
+}
+
+main>article>.publication>.tag:hover {
+    border-color: var(--link-hover-color);
 }
 
 footer {
@@ -173,10 +241,10 @@ footer {
     bottom: 0;
     color: white;
     display: flex;
-    font-size: .75rem;
+    font-size: 0.75rem;
     justify-content: center;
     left: 0;
-    padding: .25rem 0;
+    padding: 0.25rem 0;
     position: fixed;
     width: 100%;
 }

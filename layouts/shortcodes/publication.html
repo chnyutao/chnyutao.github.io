@@ -1,0 +1,6 @@
+<div class="publication">
+  <h4>{{ .Get "title" }}</h4>
+  {{ .Get "authors" | safeHTML }}<br>
+  <em>{{ .Get "venue" }}</em><br>
+  {{ .Inner }}
+</div>

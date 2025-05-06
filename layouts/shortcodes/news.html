@@ -1,0 +1,8 @@
+<table class="news">
+  <tbody>
+    <tr>
+      <td>{{ .Get "date" }}</td>
+      <td>{{ .Inner | .Page.RenderString }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -5,12 +5,29 @@ title = ''
 
 ## About
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut velit nibh. Mauris faucibus tellus et diam ornare, quis porta dui cursus. Proin gravida est vel massa auctor consequat. Aenean dignissim rutrum odio eget cursus. Vestibulum ut feugiat orci. Cras ut purus bibendum, blandit orci eget, placerat risus. Sed eu nunc libero. Aenean facilisis augue nibh, id pretium est viverra id. Donec gravida nibh quis sagittis placerat. Nunc congue volutpat convallis. Proin sit amet finibus quam.
+I am an incoming PhD student (starting Aug) in computer science at the University of Macau, where I am part of the [BOLT Lab](https://www.bolt-lab.org/) and supervised by [Dr. Steven Morad](https://www.dangersteve.com). Before that I completed my master's degree at the Australian National University supervised by [Dr. Thang Bui](https://thangbui.github.io), and bachelor's degreee at the Beijing University of Posts and Telecommunications supervised by Dr. Jinpeng Chen.
+
+I research artificial intelligence (AI) and machine learning (ML). Specifically, my current research interests include **continual learning** (CL), **reinforcement learning** (RL), and more recently world modelling. I also enjoy applying Bayesian / probabilistic techniques to solving the aforementioned problems. From a higher perspective, I like
+- Agent that can improve itself from environmental feedbacks with little supervision signal;
+- Agent that can accomodate to evolving environments and learn incrementally without forgetting.
 
 ## News
 
-Ut ligula sem, lobortis vitae neque id, pretium tempus purus. Vestibulum ultrices ex lectus, scelerisque dictum lacus fringilla sit amet. Ut vulputate, mi in dignissim maximus, purus tortor rhoncus quam, at eleifend tortor dolor quis quam. Ut non elit ac erat pretium semper ultrices at enim. Aliquam ornare ornare auctor. Sed ut sapien a nisl scelerisque feugiat eu commodo massa. Aliquam in tellus id metus placerat maximus. Sed nec dolor magna. In ac pulvinar ipsum. Cras euismod hendrerit enim, feugiat laoreet erat. Ut nulla quam, efficitur eget diam eu, bibendum suscipit libero. Cras interdum justo libero, eleifend molestie erat auctor et.
+{{< news date="May 2025" >}}
+I am starting as a research assistant (RA) at the University of Macau!
+{{< /news >}}
 
 ## Publications
 
-Nullam rhoncus nisi non justo tristique, in commodo lorem dapibus. Pellentesque ornare lacinia dolor vel accumsan. Curabitur tristique massa id leo condimentum, ultricies maximus mi gravida. Mauris tincidunt tempus diam, id tristique magna bibendum eget. Vivamus ornare vulputate odio et ornare. Praesent turpis ex, tincidunt eget enim quis, congue aliquam sem. Aliquam in libero sit amet ligula ultricies ornare in in enim. Proin et ipsum ornare, varius arcu in, pellentesque eros. Phasellus velit mauris, suscipit at fringilla vitae, tincidunt quis nibh. Etiam non fermentum urna. Donec sit amet mollis ipsum. Donec tellus nunc, mollis semper luctus nec, facilisis semper metus.
+(*) denotes equal contribution
+
+{{< publication
+  title="Learn to Predict Vertical Track Irregularity with Extremely Imbalanced Data"
+  authors="<u>Yutao Chen</u>, Yu Zhang, and Fei Yang"
+  venue="In the 13th Asian Conference on Machine Learning (ACML), 2021."
+>}}
+    {{< tag preprint "https://arxiv.org/abs/2012.03062" >}}
+    {{< tag link "https://proceedings.mlr.press/v157/chen21c.html" >}}
+{{< /publication >}}
+
+More coming soon (_hopefully_) ...
