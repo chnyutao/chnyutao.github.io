@@ -153,7 +153,9 @@ main>nav>a>i.fa {
 
 main>article {
     flex: 1 1 auto;
+    hyphens: auto;
     margin: 2rem;
+    text-align: justify;
 }
 
 main>article>h2 {
@@ -177,9 +179,7 @@ main>article>*:has(+h2) {
 
 main>article>ol,
 main>article>ul {
-    hyphens: auto;
     margin-bottom: 0.5rem;
-    text-align: justify;
 }
 
 main>article ol,
@@ -188,9 +188,7 @@ main>article ul {
 }
 
 main>article>p {
-    hyphens: auto;
     margin-bottom: 0.5rem;
-    text-align: justify;
 }
 
 main>article>.news {
