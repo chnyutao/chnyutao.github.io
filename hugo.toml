@@ -4,6 +4,9 @@ enableGitInfo = true
 languageCode = 'en-us'
 title = 'Yutao Chen'
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [menus]
 [[menus.main]]
 name = "home"
