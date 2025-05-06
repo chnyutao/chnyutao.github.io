@@ -1,4 +1,5 @@
 baseURL = 'https://chnyutao.github.io/'
+disableKinds = ['taxonomy']
 enableGitInfo = true
 languageCode = 'en-us'
 title = 'Yutao Chen'
