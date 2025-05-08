@@ -7,7 +7,6 @@ title = 'Yutao Chen'
 [markup.goldmark.renderer]
 unsafe = true
 
-[menus]
 [[menus.main]]
 name = "home"
 url = "#"

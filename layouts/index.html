@@ -3,9 +3,9 @@
 <main>
   <nav>
     {{ range .Site.Menus.main }}
-    {{ $URL := .URL | absURL }}
-    <a href="{{ $URL }}">
+    <a href="{{ .URL | relURL }}">
       {{ .Name | title }}
+      {{ $URL := .URL | absURL }}
       {{ if not (or (strings.Contains $URL "localhost") (strings.Contains $URL $.Site.BaseURL)) }}
       <i class="fa fa-up-right-from-square"></i>
       {{ end }}
