@@ -52,7 +52,9 @@ strong {
 i.fa {
     align-self: flex-start;
     color: var(--text-dim-color);
-    width: 1.2rem;
+    font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands";
+    font-size: 0.9rem;
+    width: 1rem;
 }
 
 body {
@@ -67,7 +69,7 @@ header {
     align-items: center;
     display: flex;
     flex-direction: row;
-    padding: 2rem 0;
+    margin: 2rem 0;
 }
 
 header>.avatar {
@@ -111,11 +113,10 @@ header>.info>.affiliation {
 header>.info>.social {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
 }
 
-header>.info>.social>.delimeter:last-child {
-    display: none;
+header>.info>.social>a:not(:last-of-type) {
+    margin-right: 1rem;
 }
 
 main {
@@ -145,10 +146,6 @@ main>nav>a {
 main>nav>a:hover {
     border-right: 3px solid var(--link-color);
     font-weight: 500;
-}
-
-main>nav>a>i.fa {
-    font-size: 0.9rem;
 }
 
 main>article {
@@ -255,10 +252,12 @@ footer {
 
     header>.avatar {
         margin-bottom: 1rem;
-        width: 40%;
+        width: 50%;
+        max-width: 250px;
     }
 
     header>.info {
+        margin: 0 2rem;
         text-align: center;
     }
 
@@ -271,12 +270,46 @@ footer {
         justify-content: center;
     }
 
-    header>.info>.social>.delimeter {
-        display: none;
+    main>nav {
+        max-height: 0;
+        overflow: hidden;
+        position: fixed;
+        right: 0;
+        top: 0;
+        transition: all 1s ease;
+        z-index: 999;
     }
 
-    main>nav {
-        display: none;
+    main>nav:hover {
+        max-height: 100%;
+    }
+
+    main>nav::before {
+        align-items: center;
+        background-color: var(--border-color);
+        content: "🌐";
+        display: flex;
+        height: 2rem;
+        justify-content: center;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 2rem;
+    }
+
+    main>nav>a {
+        background-color: var(--background-color);
+        border: 1px dashed var(--border-color);
+        padding: 0.5rem 1rem;
+    }
+
+    main>nav>a:has(+a) {
+        border-bottom: none;
+    }
+
+    main>nav>a:hover {
+        border-right: 1px solid var(--link-color);
+        font-weight: unset;
     }
 
     footer {
