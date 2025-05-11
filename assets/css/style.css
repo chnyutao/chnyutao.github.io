@@ -136,6 +136,11 @@ main>nav {
     top: 2rem;
 }
 
+main>nav>input,
+main>nav>label {
+    display: none;
+}
+
 main>nav>a {
     border-right: 1px solid var(--border-color);
     color: var(--text-dim-color);
@@ -276,18 +281,18 @@ footer {
         position: fixed;
         right: 0;
         top: 0;
-        transition: all 1s ease;
+        transition: all 0.5s ease;
         z-index: 999;
     }
 
-    main>nav:hover {
+    main>nav:has(>input:checked) {
         max-height: 100%;
     }
 
-    main>nav::before {
+    main>nav>label {
         align-items: center;
         background-color: var(--border-color);
-        content: "🌐";
+        cursor: pointer;
         display: flex;
         height: 2rem;
         justify-content: center;
