@@ -6,12 +6,13 @@
     <h1 class="name">
       {{ .Site.Params.personal.name | title }}
     </h1>
-    <h2 class="title">{{ .Site.Params.personal.title }}</h2>
+    <p class="title">{{ .Site.Params.personal.title }}</p>
     <p class="affiliation">{{ .Site.Params.personal.affiliation | safeHTML }}</p>
     <div class="social">
       {{ range $key, $val := .Site.Params.personal.social }}
       <a href="{{ $val.link }}" target="_blank" rel="noopener">
-        <i class="fa fa-{{ $val.icon }}"></i>&nbsp;{{ $val.name }}
+        <i class="fa fa-{{ $val.icon }}"></i>
+        {{ $val.name }}
       </a>
       {{ end }}
     </div>

@@ -1,0 +1,18 @@
+header {
+    flex-direction: column;
+}
+
+header>.avatar {
+    margin-bottom: 1rem;
+    width: 50%;
+    max-width: 250px;
+}
+
+header>.info {
+    margin: 0 2rem;
+    text-align: center;
+}
+
+header>.info>.social {
+    justify-content: center;
+}

@@ -12,6 +12,12 @@
   <!-- favicon -->
   <link rel="icon" href="{{ .Site.Params.favicon | absURL }}">
 
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -20,6 +26,8 @@
   <!-- style -->
   {{ $style := resources.Get "css/style.css" | minify }}
   <link media="screen" rel="stylesheet" href='{{ $style.Permalink }}' />
+  {{ $style := resources.Get "css/responsive.css" | minify }}
+  <link media="screen and (max-width: 768px)" rel="stylesheet" href='{{ $style.Permalink }}' />
 
   <!-- title -->
   <title>{{ .Site.Title }}</title>

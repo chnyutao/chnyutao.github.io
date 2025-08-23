@@ -1,22 +1,20 @@
 {{ define "main" }}
 
-<main>
-  <nav>
-    <label for="toggle-nav">🌐</label>
-    <input id="toggle-nav" type="checkbox">
-    {{ range .Site.Menus.main }}
-    <a href="{{ .URL | relURL }}">
-      {{ .Name | title }}
-      {{ $URL := .URL | absURL }}
-      {{ if not (or (strings.Contains $URL "localhost") (strings.Contains $URL $.Site.BaseURL)) }}
-      <i class="fa fa-up-right-from-square"></i>
-      {{ end }}
-    </a>
+<nav>
+  {{ range .Site.Menus.main }}
+  <a href="{{ .URL | relURL }}">
+    {{- .Name | title -}}
+    {{ $URL := .URL | absURL }}
+    {{ if not (or (strings.Contains $URL "localhost") (strings.Contains $URL $.Site.BaseURL)) }}
+    <i class="fa fa-up-right-from-square"></i>
     {{ end }}
-  </nav>
-  <article>
-    {{ .Content}}
-  </article>
-</main>
+  </a>
+  <span> / </span>
+  {{ end }}
+</nav>
+
+<article>
+  {{ .Content}}
+</article>
 
 {{ end }}
