@@ -19,6 +19,10 @@ Being able to self-improve and evolve is arguably one of the most important trai
 
 ## News
 
+{{< news date="Aug 2025" >}}
+I am now officially a PhD student at the University of Macau.
+{{< /news >}}
+
 {{< news date="May 2025" >}}
 I am starting as a research assistant (RA) at the University of Macau!
 {{< /news >}}
@@ -34,5 +38,3 @@ I am starting as a research assistant (RA) at the University of Macau!
   {{< tag preprint "https://arxiv.org/abs/2012.03062" >}}
   {{< tag link "https://proceedings.mlr.press/v157/chen21c.html" >}}
 {{< /publication >}}
-
-More coming soon (_hopefully_) ...

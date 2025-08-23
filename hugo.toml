@@ -37,12 +37,11 @@ avatar = 'avatar.jpg'
 name = 'Yutao Chen'
 title = 'PhD Student'
 affiliation = """
-Department of Computer and Information Science<br>
 Faculty of Science and Technology<br>
 University of Macau"""
 
 [params.personal.social]
-"1" = { name = "Email", icon = "at", link = "mailto:yutaochen@um.edu.mo" }
+"1" = { name = "Email", icon = "at", link = "mailto:yc574427@um.edu.mo" }
 "2" = { name = "GitHub", icon = "github", link = "https://github.com/chnyutao" }
 "3" = { name = "Google Scholar", icon = "google-scholar", link = "https://scholar.google.com/citations?user=bNs7ulQAAAAJ" }
 "4" = { name = "Twitter", icon = "twitter", link = "https://x.com/chnyutao" }
