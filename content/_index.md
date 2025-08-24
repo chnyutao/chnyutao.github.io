@@ -5,15 +5,15 @@ title = ''
 
 ## About
 
-Hi there! I am an incoming PhD student (starting Aug) in computer science at the University of Macau, where I am part of the [BOLT Lab](https://www.bolt-lab.org/) and supervised by [Dr. Steven Morad](https://www.dangersteve.com).
+Hi there! I am a PhD student in computer science at the University of Macau, where I am part of the [BOLT Lab](https://www.bolt-lab.org/) and supervised by [Dr. Steven Morad](https://www.dangersteve.com).
 
-I am generally interested in artificial intelligence and machine learning. Specifically, my current research interests include **reinforcement learning** (RL), **continual learning** (CL), and world modelling with high-dimensional data in the real world. I also enjoy applying Bayesian and probabilistic techniques to the aforementioned topics.
+I am generally interested in artificial intelligence and machine learning. Specifically, my current research interests span **reinforcement learning** (RL), **continual learning** (CL), and world modeling with high-dimensional observations in the real world. I also apply Bayesian and probabilistic inference to the aforementioned topics.
 
 From a more pholosophical perspective, my research interests are driven by the conviction that general intellligence should be capable of:
-- Self-improving from experiences through interactions with the environment (RL);
-- Evolving with changing environments without forgetting prior knowledge (CL).
+- Self-improving through few interactions with the environment (RL);
+- Adapting to changing environments while minimizing forgetting (CL).
 
-Being able to self-improve and evolve is arguably one of the most important traits of intelligent beings, with us humans as one obvious example.
+To this end, I am pursuing intelligent agents (with applications in **robotics**) that are capable of learning and adapting continually in the real world.
 
 🚀 **<u>Please do not hestitate to reach out if you are interested in collaboration!</u>**
 
