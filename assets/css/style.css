@@ -152,12 +152,15 @@ article ul {
 /* SHORTCODES */
 
 .news {
+    margin-bottom: 0;
     width: 100%;
 }
 
 .news td:first-child {
     font-size: small;
     min-width: 5rem;
+    padding-top: 0.2rem;
+    vertical-align: top;
     width: 20%;
 }
 
