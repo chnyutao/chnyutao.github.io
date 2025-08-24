@@ -31,10 +31,11 @@ I am starting as a research assistant (RA) at the University of Macau!
 
 (*) denotes equal contribution
 
+
 {{< publication
   title="Learn to Predict Vertical Track Irregularity with Extremely Imbalanced Data"
   authors="<u>Yutao Chen</u>, Yu Zhang, and Fei Yang"
   venue="In the 13th Asian Conference on Machine Learning (ACML), 2021." >}}
-  {{< tag preprint "https://arxiv.org/abs/2012.03062" >}}
-  {{< tag link "https://proceedings.mlr.press/v157/chen21c.html" >}}
+  [preprint](https://arxiv.org/abs/2012.03062)
+  [link](https://proceedings.mlr.press/v157/chen21c.html)
 {{< /publication >}}

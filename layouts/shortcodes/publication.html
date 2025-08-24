@@ -1,6 +1,6 @@
 <div class="publication">
   <strong>{{ .Get "title" }}</strong><br>
-  {{ .Get "authors" | safeHTML }}<br>
+  <p>{{ .Get "authors" | safeHTML }}</p>
   <em>{{ .Get "venue" }}</em><br>
-  {{ .Inner }}
+  {{ .Inner | .Page.RenderString }}
 </div>
