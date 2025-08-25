@@ -19,9 +19,11 @@ jobs:
           hugo-version: 'latest'
       - uses: typst-community/setup-typst@v4
       - uses: actions/checkout@v4
+        with:
+          submodules: true
       - run: |
           hugo --minify
-          bash typst/compile.sh
+          bash notes/compile.sh public/notes
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
