@@ -17,8 +17,15 @@ jobs:
       - uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
       - uses: actions/checkout@v4
-      - run: hugo --minify
+      - run: |
+          uv python install
+          uv run server.py &
+          sleep 5
+          hugo --minify
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./public

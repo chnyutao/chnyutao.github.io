@@ -1,8 +1,7 @@
 {{ $name := .Get 0 }}
 {{ $source := .Get 1 }}
 {{ $target := strings.ReplaceRE ".typ$" ".pdf" $source }}
-{{ $server := .Site.Params.typst.server }}
-{{ $url := printf "http://localhost:5000?file=%s" $server (urlize $source) }}
+{{ $url := printf "http://127.0.0.1:5000?file=%s" (urlize $source) }}
 
 {{ with resources.GetRemote $url }}
 {{ with resources.Copy $target . }}
