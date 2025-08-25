@@ -136,12 +136,32 @@ article>* {
     margin-bottom: 0.5rem;
 }
 
-article>*:has(+h2) {
-    margin-bottom: 0 !important;
+article>h1 {
+    font-size: x-large;
 }
 
 article>h2 {
-    padding-top: 2rem;
+    font-size: larger;
+}
+
+article>h3 {
+    font-size: large;
+}
+
+article>h4,
+article>h5,
+article>h6 {
+    font-size: medium;
+}
+
+article>h1,
+article>h2 {
+    padding-top: 1rem;
+}
+
+article>*:has(+h1),
+article>*:has(+h2) {
+    margin-bottom: 0;
 }
 
 article ol,
@@ -196,6 +216,10 @@ article ul {
     padding: 0.1rem 0.5rem;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.typst {
+    font-family: monospace;
 }
 
 /* FOOTER */

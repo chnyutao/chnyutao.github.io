@@ -24,9 +24,13 @@ name = "publications"
 url = "#publications"
 weight = 4
 [[menus.main]]
+name = "notes"
+url = "/notes"
+weight = 5
+[[menus.main]]
 name = "résumé"
 url = "https://drive.google.com/file/d/17O4CrllhZ79U-JA_kL00ufe_-d_25rHW"
-weight = 5
+weight = 6
 
 [params]
 author = 'Yutao Chen'
