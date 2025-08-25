@@ -171,6 +171,10 @@ article ul {
 
 /* SHORTCODES */
 
+.link {
+    font-family: monospace;
+}
+
 .news {
     margin-bottom: 0;
     width: 100%;
@@ -216,10 +220,6 @@ article ul {
     padding: 0.1rem 0.5rem;
     text-decoration: none;
     text-transform: uppercase;
-}
-
-.typst {
-    font-family: monospace;
 }
 
 /* FOOTER */

@@ -7,4 +7,4 @@ title = 'Notes'
 
 ## Variational Auto-Encoders
 
-\- {{< typst "Variational Auto-Encoder" "typst/vae.typ" >}}
+\- {{< link "vae.pdf" "Variational Auto-Encoders" >}}
