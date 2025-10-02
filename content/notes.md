@@ -3,8 +3,10 @@ date = '2025-08-24T20:44:00+08:00'
 title = 'Notes'
 +++
 
-# Generative Models
+# Optimization
 
-## Variational Auto-Encoders
+\- {{< link "optimization/gradient-descent.pdf" "Gradient Descent" >}}
 
-\- {{< link "vae.pdf" "Variational Auto-Encoders" >}}
+# Sampling
+
+\- {{< link "sampling/importance-sampling.pdf" "Importance Sampling" >}}
