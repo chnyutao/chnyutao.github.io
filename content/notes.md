@@ -5,6 +5,8 @@ title = 'Notes'
 
 # Optimization
 
+\- {{< link "optimization/expectation-maximization.pdf" "Expectation Maximization" >}}
+
 \- {{< link "optimization/gradient-descent.pdf" "Gradient Descent" >}}
 
 # Sampling
