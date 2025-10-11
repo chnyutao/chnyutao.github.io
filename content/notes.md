@@ -9,6 +9,8 @@ title = 'Notes'
 
 \- {{< link "optimization/gradient-descent.pdf" "Gradient Descent" >}}
 
+\- {{< link "optimization/natural-gradient-descent.pdf" "Natural Gradient Descent" >}}
+
 # Sampling
 
 \- {{< link "sampling/importance-sampling.pdf" "Importance Sampling" >}}
