@@ -31,6 +31,12 @@ I am starting as a research assistant (RA) at the University of Macau!
 
 (*) denotes equal contribution
 
+{{< publication
+  title="Learning Mixture Density via Natural Gradient Expectation Maximization"
+  authors="<u>Yutao Chen</u>, Jasmine Bayrooti, and Steven Morad"
+  venue="Under review" >}}
+  [preprint](https://arxiv.org/abs/2602.10602)
+{{< /publication >}}
 
 {{< publication
   title="Learn to Predict Vertical Track Irregularity with Extremely Imbalanced Data"
