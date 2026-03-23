@@ -3,6 +3,10 @@ date = '2025-08-24T20:44:00+08:00'
 title = 'Notes'
 +++
 
+# Generative Model
+
+\- {{< link "generative-model/vae.pdf" "Variational Auto-Encoder" >}}
+
 # Optimization
 
 \- {{< link "optimization/expectation-maximization.pdf" "Expectation Maximization" >}}
