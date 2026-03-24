@@ -7,6 +7,8 @@ title = 'Notes'
 
 \- {{< link "generative-model/vae.pdf" "Variational Auto-Encoder" >}}
 
+\- {{< link "generative-model/nf.pdf" "Normalizing Flow" >}}
+
 # Optimization
 
 \- {{< link "optimization/expectation-maximization.pdf" "Expectation Maximization" >}}
