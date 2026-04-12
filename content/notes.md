@@ -22,3 +22,5 @@ title = 'Notes'
 \- {{< link "sampling/inverse-transform-sampling.pdf" "Inverse Transform Sampling" >}}
 
 \- {{< link "sampling/importance-sampling.pdf" "Importance Sampling" >}}
+
+\- {{< link "sampling/rejection-sampling.pdf" "Rejection Sampling" >}}
