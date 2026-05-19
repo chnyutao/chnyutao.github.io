@@ -11,6 +11,8 @@ title = 'Notes'
 
 \- {{< link "generative-model/nf.pdf" "Normalizing Flow" >}}
 
+\- {{< link "generative-model/drifting.pdf" "Drifting Models" >}}
+
 # Optimization
 
 \- {{< link "optimization/expectation-maximization.pdf" "Expectation Maximization" >}}
